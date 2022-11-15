@@ -23,7 +23,7 @@ GROUP BY Year_Classification;
 
 The output of this query was as follows:
 
-![Answer 1](https://user-images.githubusercontent.com/109762085/201994950-48ec2ce3-3c55-4b9f-9a5c-c5dd58ea2d30.png)
+![Answer 1](https://user-images.githubusercontent.com/109762085/201998411-0ac3918d-3e65-46be-b913-aa94731ae9dc.png)
 
 So, it is clear that the average sales before 2010 was higher than after 2010
 
