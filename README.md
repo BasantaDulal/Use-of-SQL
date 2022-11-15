@@ -7,7 +7,8 @@ The dataset was related to Video Game Sales in CSV form. So, to get the required
 ### Answering Business Questions
 Altogether there were three business questions that need to be answered and are as follows:
 
-1. Was the average of global sales higher before or after 2010?
+#### 1. Was the average of global sales higher before or after 2010?
+
 To get the answer of this question following SQL query was performed.
 ```sql
 SELECT AVG(Global_Sales),
@@ -18,6 +19,27 @@ SELECT AVG(Global_Sales),
 END AS Year_Classification
 FROM vgsales
 GROUP BY Year_Classification;
+```
 
 The output of this query was as follows:
 
+![Answer 1](https://user-images.githubusercontent.com/109762085/201994950-48ec2ce3-3c55-4b9f-9a5c-c5dd58ea2d30.png)
+
+So, it is clear that the average sales before 2010 was higher than after 2010
+
+#### 2. Create a new column that labels records before 2010 as 'pre-2010' and after 2010 as 'post-2010'.
+
+To get the answer of this question following SQL query was performed.
+```sql
+SELECT *,
+    CASE
+        WHEN Year < 2010 THEN 'Pre-2010'
+        WHEN Year > 2010 THEN 'Post-2010'
+        ELSE 'In-2010'
+END AS Year_Classification
+FROM vgsales;
+```
+
+The output of this query was as follows:
+
+![Answer 2](https://user-images.githubusercontent.com/109762085/201997487-910bb4e3-8ce2-4e99-95d2-b03cbb48d3c1.png)
