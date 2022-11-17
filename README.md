@@ -1,5 +1,3 @@
-## Use of SQL to Answer Business Questions
-
 ### Importing Data to SQL Server
 The dataset related to Video Game Sales was in CSV form. So, to get the required answers form using SQL Query, the dataset was imported to SQL server. The used dataset is also availabel in kaggle.com, which can be downloaded from [here](https://www.kaggle.com/datasets/gregorut/videogamesales?resource=download).
 
