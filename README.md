@@ -22,7 +22,7 @@ The output of this query was as follows:
 
 ![Answer 1](https://user-images.githubusercontent.com/109762085/201998411-0ac3918d-3e65-46be-b913-aa94731ae9dc.png)
 
-So, it is clear that the average sales before 2010 was higher than after 2010
+So, it is clear that the average sales before 2010 was higher than after 2010.
 
 #### 2. Create a new column that labels records before 2010 as 'pre-2010' and after 2010 as 'post-2010'.
 
